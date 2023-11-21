@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log</title>
+    <link rel="stylesheet" href="log.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div class="modal fade" data-keyboard="true" id="loggingModal" tabindex="-1" role="dialog" aria-labelledby="loggingModalLabel" >
+        <div class="modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title ml-3">Log</h3>
+                    <button type="button" class="close button-pressed-no-shadow" data-dismiss="modal" aria-label="Close">
+                        <span class="modal-close-button" aria-hidden="true"><i class="fas fa-times fa-lg mt-2 mr-2"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="log-modal-content">
+                        <table class="table table-striped table-responsive-md" id="logDataTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Session</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Start Time</th>
+                                    <th scope="col">End Time</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="locationUpdateLog"></tbody>
+                        </table>
+                        <div class="container d-flex justify-content-center">
+                            <span id="NoDataLoggedText">No data logged yet</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary button-pressed-no-shadow shadow-none" id="clearButton">Clear Log</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

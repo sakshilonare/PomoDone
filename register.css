@@ -1,0 +1,122 @@
+body 
+{
+  font-family:sans-serif; 
+  background: -webkit-linear-gradient(to left, #8942a8, #ba382f);  
+  background: linear-gradient(to left, #8942a8, #ba382f); 
+  color:whitesmoke;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+form{
+    width:35rem;
+    margin-top: 5%;
+    margin-left: 30%;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 25px;
+}
+
+input[type=text], input[type=password]{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    border: none;
+  }
+
+button {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    margin: 7px 0;
+    padding: 14px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    opacity: 1;
+  }
+
+button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #d2cd9a;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow:0 0 20px #eee ;
+}
+
+.headingsContainer{
+    text-align: center;
+}
+
+.headingsContainer p{
+    color: gray;
+}
+
+  .login{
+    color: white;
+    text-align: center;
+  }
+  
+  .login a{
+    color: rgb(74, 216, 235);
+  }
+  
+  .login a:link{
+    text-decoration: none;
+  }
+
+  .login a:hover{
+    color: rgb(207, 139, 191);
+    text-decoration: underline;
+  } 
+
+  .back{
+    color: white;
+    text-align: center;
+  }
+
+  .back a{
+    color: white;
+    text-align: center;
+  }
+
+  .back a:link{
+    font-size: small;
+    text-decoration: none;
+  }
+
+  .back a:hover{
+    color: rgb(207, 139, 191);
+    text-decoration: underline;
+  }
+
+  /* Media queries for the responsiveness of the page */
+  @media screen and (max-width: 600px) {
+    form{
+      width: 25rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form{
+      width: 20rem;
+    }
+  }
+  
+  
+  
